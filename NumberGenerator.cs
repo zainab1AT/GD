@@ -1,8 +1,9 @@
 using System;
+using UnityEngine;
 
-class NumberGenerator
+public class NumberGenerator : MonoBehaviour
 {
-    static void Main()
+    void Start()
     {
         Random random = new Random();
         int number;
@@ -16,7 +17,7 @@ class NumberGenerator
                 continue; 
             }
 
-            Console.WriteLine("Random number: " + number);
+            Debug.Log("Random number: " + number);
 
             if (number == 15)
             {
