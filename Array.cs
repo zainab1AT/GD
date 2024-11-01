@@ -1,8 +1,9 @@
 using System;
+using UnityEngine;
 
-class Program
+public class SentenceGenerator : MonoBehaviour
 {
-    static void Main()
+    void Start()
     {
         string[] words = { "Cat", "Dog", "Car", "Pizza", "Hat", "Fish", "Tree", "Monkey", "Ball", "Bird" };
 
@@ -17,6 +18,7 @@ class Program
             sentence += words[index] + " "; 
             wordCount++;
         }
-        Console.WriteLine("The sentence: " + sentence.Trim());
+        
+        Debug.Log("The sentence: " + sentence.Trim());
     }
 }
